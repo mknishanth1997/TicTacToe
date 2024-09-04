@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="sheet.css">
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Toc Toe</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="user-name">
+                <label for="uname">Name:</label>
+                <input class="user-name" id="uname" type="text">
+                <button class="user-name-submit">Submit</button>
+            </div>
+            <h1>Tic Toc Toe</h1>
+            <div class="choice-button">
+                <select name="Opponent" >
+                    <option value="human">Human 🤷‍♂️</option>
+                    <option value="gemini" selected>Google Gemini 💻</option>
+                    <option value="chatgpt">ChatGpt 🤖</option>
+                    <option value="apple">Apple 🍎</option>
+                </select>
+            </div>
+        </div>
+        <div class="game-arena">
+            <div class="vs">
+                <h1 class="pvsp">Player 1 VS Player 2</h1>
+            </div>
+            <div class="game-board">
+                <div class="cell cell1" value = "0"><img class="img0"  src="" alt=""></div>
+                <div class="cell cell2" value = "1"><img class="img1"  src="" alt=""></div>
+                <div class="cell cell3" value = "2"><img class="img2"  src="" alt=""></div>
+                <div class="cell cell4" value = "3"><img class="img3"  src="" alt=""></div>
+                <div class="cell cell5" value = "4"><img class="img4"  src="" alt=""></div>
+                <div class="cell cell6" value = "5"><img class="img5"  src="" alt=""></div>
+                <div class="cell cell7" value = "6"><img class="img6"  src="" alt=""></div>
+                <div class="cell cell8" value = "7"><img class="img7"  src="" alt=""></div>
+                <div class="cell cell9" value = "8"><img class="img8"  src="" alt=""></div>
+            </div>
+            <div class="game-actions">
+                <button class="start">start</button>
+                <button class="reset">Reset</button>
+            </div>
+
+            <div class="gameWinnerDisplay">
+                <h1>Player1 is The Winner</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

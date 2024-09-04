@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.header  {
+    border: solid;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+}
+.header h1 {
+    margin: 0 auto;
+    font-size: 64px;
+}
+.header select {
+    font-size: 32px;
+}
+.header option {
+    border: solid;
+    font-size: 32px;
+}
+.user-name > label {
+    font-size: 30px;
+}
+.user-name-submit {
+    font-size: 22px;
+    border-radius: 12px;
+    padding: 8px 20px;
+}
+
+#uname {
+    height: 30px;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid;
+}
+
+.user-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Select */
+select {
+    padding: 8px 16px;
+    appearance: none;
+    border-radius: 8px;
+    background-color: hotpink;
+}
+
+
+/* Game Arena */
+.game-arena {
+    border: solid;
+    height: 100vh;
+}
+.vs, .gameWinnerDisplay{
+    display: flex;
+    justify-content: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    box-sizing: border-box;
+    gap: 8px;
+    justify-content: center;
+}
+.cell {
+    border: solid hotpink;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.game-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 8px;
+}
+.game-actions > button {
+    font-size: 32px;
+    padding: 8px 32px;
+    border-radius: 16px;
+}
+.start {
+    background-color: greenyellow;
+}
+.reset {
+    background-color: red;
+}
+.gameWinnerDisplay {
+    margin: 25px;
+}
+
+img {
+    height: 75px;
+}
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
