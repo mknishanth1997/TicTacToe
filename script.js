@@ -397,6 +397,7 @@ function startTheGame()
             addEventListenerToTheCells();
             ticTacToe.currentPlayer = "x";
             // ticTacToe.movesPlayed++;
+            playerDisplay();
         }
         else if(ticTacToe.movesPlayed > 0)
         {
@@ -438,8 +439,16 @@ function removeClicks() {
     });
 }
 
+function playerDisplay()
+{
+    console.log("player vs player");
+    const pd = document.querySelector(".pvsp");
+    pd.textContent = `${ticTacToe.player1Name} VS ${ticTacToe.player2Name}`;
+}
+
 startTheGame();
 resetTheGame();
 getTheUserName();
+
 
 
