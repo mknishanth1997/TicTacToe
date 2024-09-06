@@ -1,12 +1,21 @@
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 body {
     margin: 0;
     padding: 0;
+    background-image: url(bg2.jpg);
+    background-size: contain;
+    font-family: Pacifico;
 }
 
 /* Header */
 
 .header  {
-    border: solid;
+    /* border: solid; */
     display: flex;
     align-items: center;
     padding: 15px 25px;
@@ -14,6 +23,7 @@ body {
 .header h1 {
     margin: 0 auto;
     font-size: 64px;
+    color: black;
 }
 .header select {
     font-size: 32px;
@@ -24,11 +34,14 @@ body {
 }
 .user-name > label {
     font-size: 30px;
+    color: #FF4500;
 }
 .user-name-submit {
     font-size: 22px;
     border-radius: 12px;
     padding: 8px 20px;
+    /* color: #FF4500; */
+    background-color: #FF4500;
 }
 
 #uname {
@@ -36,7 +49,7 @@ body {
     appearance: none;
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #90EE90;
 }
 
 .user-name {
@@ -62,6 +75,9 @@ select {
 .vs, .gameWinnerDisplay{
     display: flex;
     justify-content: center;
+    color: #F5F5DC;
+    font-size: 18px;
+    
 }
 
 .game-board {
@@ -72,9 +88,14 @@ select {
     justify-content: center;
 }
 .cell {
-    border: solid hotpink;
+    border: 10px ridge #F5DEB3;
     height: 100px;
-    border-radius: 8px;
+    border-radius: 16px;
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.5);
+    background-color: #F5DEB3;
+}
+.cell:hover {
+    background-color: #E6C990;
 }
 
 .game-actions {
@@ -89,10 +110,11 @@ select {
     border-radius: 16px;
 }
 .start {
-    background-color: greenyellow;
+    background-color: gold;
+    color: #FFFFFF;
 }
 .reset {
-    background-color: red;
+    background-color: #008080;
 }
 .gameWinnerDisplay {
     margin: 25px;
